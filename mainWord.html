@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>main</title>
+        <style type="text/css">
+            html{
+                background-color: bisque;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="color: cornflowerblue;">ChooseClass</h1>
+        <input type="text" id = 'chooseClass' value="inputClass ex:week1" onfocus="if(value == 'inputClass ex:week1'){value = ''}"onblur="if (value ==''){value='inputClass ex:week1'}">
+        <button onclick="choose()">enter</button>
+        <script>
+           function choose(){
+            if(document.getElementById('chooseClass').value == "week2"){
+                window.open('https://harry0816web.github.io/','week2');
+            }
+           }
+        </script>
+    </body>
+</html>
