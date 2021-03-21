@@ -7,24 +7,60 @@
             html{
                 background-color: bisque;
             }
+            button{
+                cursor: pointer;
+                background-color:#25dfe2;
+                color:#fff;
+                border-radius:10px;
+                cursor:pointer;
+                width: 150px;
+                height: 100px;
+            }
+            button:hover{
+                background-color:#fff;
+                color:#25dfe2 ;
+                border: 2px #25dfe2 solid;
+                
+            }
         </style>
     </head>
     <body>
-        <h1 style="color: cornflowerblue;">ChooseClass</h1>
-        <input type="text" id = 'chooseClass' value="inputClass ex:week1" onfocus="if(value == 'inputClass ex:week1'){value = ''}"onblur="if (value ==''){value='inputClass ex:week1'}">
-        <button onclick="choose()">enter</button>
+        <h1 style="color: cornflowerblue; text-align: center; font-size: 50px;">ChooseClass</h1>
+        <span style="color: rgb(220, 100, 20);">Live : </span>
+        <button onclick="choosew1()">w1</button>
+        <button onclick="choosew2()">w2</button>
+        <button onclick="choosew3()">w3</button>
+        <div id = 'enter'></div>
+        <span style="color: rgb(220, 100, 20);">Book : </span>
+        <button onclick="chooseU5()">BookU5</button>
+         <div style="text-align:unset;"></div>
+            <h1 style="color: cornflowerblue;">This website is made by Harry , who is a handsome boy.</h1>
+        </div>
         <script>
-           function choose(){
-            if(document.getElementById('chooseClass').value == "week2"){
-                window.open('https://harry0816web.github.io/weeek2_repo3/','week2');
+            var enter = '';
+            for(var i = 0;i < 4;i ++){
+                enter += '<br>';
             }
-            else if(document.getElementById('chooseClass').value == "week1"){
+            document.getElementById('enter').innerHTML = enter;
+           function choosew1(){
                 window.open('https://harry0816web.github.io/W1_repo2/','week1');
+           }
+           function choosew2(){
+                window.open('https://harry0816web.github.io/weeek2_repo3/','week2');
+           }
+           function choosew3(){
+                window.open('https://harry0816web.github.io/W3_repo/');
+           }
+           function chooseU5(){
+                window.open('https://harry0816web.github.io/book1U5_repo/');
+           }
+           /*
+            else if(document.getElementById('chooseClass').value == "week1"){
+                
             }
             else if (document.getElementById('chooseClass').value == "U5"){
                 window.open('https://harry0816web.github.io/book1U5_repo/');
-            }
-           }
+            }*/
         </script>
     </body>
 </html>
